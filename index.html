@@ -3,148 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Цунами</title>
+<title>Рыба-пила</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
+body{
+  margin:0;
+  background:#000;
+  color:#aaa;
+  font-family:'Roboto Mono', monospace;
+  scroll-behavior:smooth;
 }
 
-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+/* главный экран */
+.container{
+  max-width:700px;
+  margin:0 auto;
+  padding:60px 20px;
 }
 
-.container {
-    display: flex;
-    max-width: 1000px;
-    gap: 20px;
+h1{
+  font-size:48px;
+  margin-bottom:25px;
+  color:#ddd;
 }
 
-.text {
-    flex: 1;
+p{
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:25px;
 }
 
-.text h1 {
-    margin-bottom: 15px;
+/* кнопка */
+.start{
+  display:inline-block;
+  margin-top:20px;
+  padding:20px 50px;
+  font-size:22px;
+  text-decoration:none;
+  color:#ccc;
+  border:1px solid #444;
+  border-radius:50px;
 }
 
-.image {
-    flex: 1;
+/* слайды */
+section{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
 }
 
-.image img {
-    width: 100%;
-    border-radius: 10px;
+.slide{
+  max-width:700px;
 }
 
-.arrow {
-    position: absolute;
-    bottom: 20px;
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
+/* текст */
+.text h2{
+  font-size:28px;
+  margin-bottom:20px;
+  color:#ddd;
 }
 
-/* Адаптация под телефон */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
+.text p{
+  font-size:18px;
+  line-height:1.8;
+  color:#aaa;
+}
 
-    section {
-        height: auto;
-        padding-bottom: 80px;
-    }
+/* картинки */
+.image{
+  margin-top:30px;
+}
 
-    .arrow {
-        position: static;
-        display: block;
-        margin-top: 20px;
-    }
+.image img{
+  width:280px;
+  border-radius:10px;
+}
+
+/* стрелка */
+.arrow{
+  display:block;
+  text-align:center;
+  margin-top:40px;
+  font-size:40px;
+  color:#777;
+  text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ГЛАВНЫЙ -->
+<div class="container">
+<h1>Здравствуйте</h1>
+<p>Сегодня я расскажу о рыбе-пиле — необычном морском животном.</p>
+<p>Вы узнаете о её строении, образе жизни и интересных фактах.</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvflb2-AVQn2d2KONtCBBjZLe01gFt3vPrGsiZ0bE7b8PtrDiyQbCReFEu&s=10" style="width:260px; border-radius:10px;">
+<br>
+<a href="#slide1" class="start">Начать</a>
+</div>
+
 <!-- Слайд 1 -->
 <section id="slide1">
-<div class="container">
+<div class="slide">
 <div class="text">
-<h1>Что такое цунами</h1>
+<h2>Общая информация</h2>
 <p>
-Цунами — это огромные морские волны, возникающие из-за подводных землетрясений или извержений вулканов. Они могут распространяться на тысячи километров и двигаться с большой скоростью. В открытом океане такие волны почти незаметны, но у берега становятся очень опасными.
+Рыба-пила относится к скатам и известна своим длинным носом с зубцами. Этот нос называется рострум и используется для охоты. Он может быть почти таким же длинным, как всё тело.
 </p>
 <p>
-При приближении к суше высота волн резко увеличивается, что приводит к разрушениям. Цунами способно затопить города и унести множество жизней. Это одно из самых опасных природных явлений на Земле.
+Тело у неё плоское и вытянутое, что помогает ей жить у дна. Она может достигать больших размеров и жить в тёплых водах. Иногда заплывает даже в реки.
 </p>
 </div>
 <div class="image">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/2004-tsunami.jpg">
-</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2A4p7LuOhA9J4gVyK7QYeCzRA7lz_ICNbUE24y-sR9V8WOkSGz41LvU8H&s=10">
 </div>
 <a href="#slide2" class="arrow">↓</a>
+</div>
 </section>
 
 <!-- Слайд 2 -->
 <section id="slide2">
-<div class="container">
+<div class="slide">
 <div class="text">
-<h1>Где и как возникают</h1>
+<h2>Образ жизни</h2>
 <p>
-Цунами чаще всего возникают в Тихом океане, где находится так называемое «огненное кольцо». Здесь происходит большое количество землетрясений и вулканической активности. Основной причиной цунами является резкое смещение морского дна.
+Рыба-пила живёт у дна и ведёт спокойный образ жизни. Она часто прячется в песке и выходит на охоту. Наиболее активна ночью.
 </p>
 <p>
-Когда земная кора сдвигается, вода над ней приходит в движение и образует мощные волны. Иногда причиной могут быть подводные оползни или падение метеоритов. Такие явления происходят редко, но имеют серьёзные последствия.
+Она питается рыбой и другими морскими животными. С помощью своей "пилы" она оглушает добычу. Также она помогает поддерживать баланс в природе.
 </p>
 </div>
 <div class="image">
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Tsunami_map.png">
-</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYi_He8tChbKQ69KpIxUalT48ZC742tUqNEHxHt_kjMLEszbeNCrwvwJc&s=10">
 </div>
 <a href="#slide3" class="arrow">↓</a>
+</div>
 </section>
 
 <!-- Слайд 3 -->
 <section id="slide3">
-<div class="container">
+<div class="slide">
 <div class="text">
-<h1>Меры безопасности</h1>
+<h2>Особенности</h2>
 <p>
-При угрозе цунами важно быстро покинуть прибрежную зону и подняться на возвышенность. Люди должны следовать указаниям служб спасения и не возвращаться к берегу слишком рано. Даже после первой волны могут прийти более сильные.
+Главная особенность — длинный рострум с зубцами. Он помогает находить добычу даже в мутной воде. Это делает рыбу-пилу уникальной.
 </p>
 <p>
-Также важно заранее знать маршруты эвакуации и иметь план действий. В некоторых странах устанавливаются системы предупреждения, которые помогают спасти жизни. Подготовка и быстрые действия — ключ к безопасности.
+Также она может защищаться с его помощью. Несмотря на силу, этот вид находится под угрозой исчезновения. Это связано с деятельностью человека.
 </p>
 </div>
 <div class="image">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Tsunami_evacuation_sign.jpg">
-</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ18K8-eB1urm3xEi1N61YtaG2qEnsZqEPtWvNupoIA4U8tfrxBT6_MEntI&s=10">
 </div>
 <a href="#slide4" class="arrow">↓</a>
+</div>
 </section>
 
 <!-- Слайд 4 -->
 <section id="slide4">
-<div class="container">
+<div class="slide">
 <div class="text">
-<h1>Заключение</h1>
-<p>
-Цунами — это опасное природное явление, которое невозможно полностью предотвратить. Однако современные технологии помогают заранее предупреждать людей. Это значительно снижает количество жертв.
-</p>
-<p>
-Знание правил безопасности и правильное поведение в чрезвычайной ситуации могут спасти жизнь. Поэтому важно изучать такие явления и быть готовым к ним. Осведомлённость — лучшая защита.
-</p>
+<h2>Интересные факты</h2>
+<p>1. Может достигать более 6 метров в длину.</p>
+<p>2. Использует "пилу" для охоты и защиты.</p>
+<p>3. Может жить в пресной воде.</p>
+<p>4. Существует миллионы лет.</p>
+<p>5. Находится под угрозой исчезновения.</p>
 </div>
 <div class="image">
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Tsunami_warning.jpg">
+<img src="https://optim.tildacdn.com/tild6436-6134-4833-b532-613039386265/-/resize/824x/-/format/webp/607a4437074cd3b7eb76.jpeg.webp">
+</div>
+<a href="#slide5" class="arrow">↓</a>
+</div>
+</section>
+
+<!-- Слайд 5 -->
+<section id="slide5">
+<div class="slide">
+<div class="text">
+<h2>Заключение</h2>
+<p>
+Рыба-пила — уникальное животное с необычным строением. Она играет важную роль в природе. Её нужно защищать.
+</p>
+<p>
+Чем больше мы знаем о природе, тем лучше можем её сохранить. Спасибо за внимание!
+</p>
 </div>
 </div>
 </section>
